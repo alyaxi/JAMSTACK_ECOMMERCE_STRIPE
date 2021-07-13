@@ -10,7 +10,7 @@ const handler = async (event) => {
     });
     return {
       statusCode: 200,
-      body: JSON.stringify({client_secret: paymentIntent.client_secret} ),
+      body: JSON.stringify({client_secret: paymentIntent.client_secret}),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
