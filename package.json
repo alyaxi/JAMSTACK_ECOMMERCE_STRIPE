@@ -14,9 +14,14 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^1.16.0",
+    "dotenv": "^8.6.0",
     "gatsby": "^3.9.0",
+    "gatsby-plugin-snipcartv3": "^2.3.3",
+    "gatsby-source-stripe": "^3.2.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "stripe": "^8.161.0"
   },
   "devDependencies": {
     "prettier": "2.3.2"
