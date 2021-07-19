@@ -33,7 +33,7 @@ const Skus = props => {
   }
   
     `)
-    console.log(products)
+    // console.log(products)
       return (
         <div style={conatinerStyles}>
           {products.allStripePrice.edges.map(({node: price}) => {

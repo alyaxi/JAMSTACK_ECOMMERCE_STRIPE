@@ -30,7 +30,7 @@ const cardStyles = {
     
   };
 export default function SkuCard({newSku}) {
-    console.log("newSku Var"+ JSON.stringify(newSku));
+    // console.log("newSku Var"+ JSON.stringify(newSku));
     const {addItem} = useShoppingCart()
     return (
         <div style={cardStyles}>

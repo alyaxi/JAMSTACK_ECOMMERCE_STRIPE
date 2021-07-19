@@ -9,7 +9,7 @@ export default function SuccessPage() {
     },[])
     return (
         <div>
-            <h1 style={{margin:"0 auto"}}>Payment Successful! Thank You :)</h1>
+            <h1 style={{textAlign: "center", marginTop: "15%"}}>Payment Successful! Thank You :)</h1>
         </div>
     )
 }

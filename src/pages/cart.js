@@ -43,9 +43,9 @@ export default function Cart() {
     const [loading, setLoading] = useState(false)
     const {cartDetails, formattedTotalPrice, cartCount,redirectToCheckout, clearCart, incrementItem, decrementItem} = useShoppingCart()
     const data = cartDetails
-    console.log(data);
+    // console.log(data);
     const ProductList = Object.entries(cartDetails)
-    console.log(ProductList);
+    // console.log(ProductList);
     return (
         <div >
         <h1>My Cart</h1>
