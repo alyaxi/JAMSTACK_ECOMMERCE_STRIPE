@@ -1,3 +1,13 @@
+<h2> PROJECT LINK: 
+JAMSTACK_STRIPE_SNIPCART : https://buildingsnipcart.netlify.app/
+jAMSTACK_STRIPE_FINAL_PROJECT : https://gatsbyecommerce21.netlify.app/
+ </h2>
+
+
+
+
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
