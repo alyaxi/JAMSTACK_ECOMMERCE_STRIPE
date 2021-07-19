@@ -1,0 +1,28 @@
+{
+  "name": "gatsby-starter-minimal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Gatsby starter with no plugins and a single welcome page.",
+  "author": "Laurie Barth",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.16.0",
+    "dotenv": "^8.6.0",
+    "gatsby": "^3.9.0",
+    "gatsby-source-stripe": "^3.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "stripe": "^8.161.0"
+  }
+}
