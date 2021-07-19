@@ -9,8 +9,8 @@ export const wrapRootElement = ({element}) => {
         mode="payment"
         cartMode="client-only"
         stripe={"pk_test_51JCWiQL5SsXqkixGf8QU3gRtUY1dzWgPvufnXW83OavRkYeAUAPY0XDpmR0UIuJK30NvLWv5unI9hSVJx1tdmtnV00M9IcjDTN"}
-        successUrl={`${window.location.origin}/success-page/`}
-        cancelUrl={`${window.location.origin}/`}
+        successUrl={`https://gatsbyecommerce21.netlify.app/success-page/`}
+        cancelUrl={`https://gatsbyecommerce21.netlify.app/`}
         currency="USD"
         allowedCountries={['US', 'GB', 'CA']}
         billingAddressCollection={true}
