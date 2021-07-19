@@ -21,15 +21,20 @@ const cardStyles = {
     outline: 'none',
     padding: '12px',
     boxShadow: '2px 5px 10px rgba(0,0,0,.1)',
-    backgroundColor: 'rgb(255, 178, 56)',
+    backgroundColor: '#141E61',
     borderRadius: '6px',
     letterSpacing: '1.5px',
+    cursor: "pointer",
+    border: "none"
+
+    
   };
 export default function SkuCard({newSku}) {
+    console.log("newSku Var"+ JSON.stringify(newSku));
     const {addItem} = useShoppingCart()
     return (
         <div style={cardStyles}>
-            <img src={newSku.image} alt={newSku.description} />
+            <img src={newSku.image} alt={newSku.description} height="150px" style={{margin: "0 auto"}} />
             <h2>{newSku.name}</h2>
             <p>{newSku.description}</p>
             <p>Price: {" "}

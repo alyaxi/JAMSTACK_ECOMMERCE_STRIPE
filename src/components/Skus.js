@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import SkuCard from "./SkuCard"
 
 
@@ -12,45 +12,46 @@ const conatinerStyles = {
 };
 
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query ProductPrices {
-        prices: allStripePrice(
-          filter: { active: { eq: true }, currency: { eq: "usd" } }
-          sort: { fields: [unit_amount] }
-        ) {
-          edges {
-            node {
-              id
-              active
-              unit_amount
-              currency
-              product {
-                id
-                description
-                name
-                images
-              }
-            }
+const Skus = props => {
+  const products = useStaticQuery(graphql`
+  query MyQuery {
+    allStripePrice{
+      edges {
+        node {
+          product {
+            id
+            images
+            description
+            name
           }
+          id
+          currency
+          unit_amount
         }
       }
-    `}
-    render = {({prices}) => (
-      <div style={conatinerStyles}>
-        {prices.edges.map(({node : price}) => {
-          const newSku = {
-            sku : price.id,
-            name: price.product.name,
-            description: price.product.description,
-            currency: price.currency,
-            Image: price.product.images,
-            price: price.unit_amount
-          };
-          return <SkuCard key={price.id} newSku={newSku} />
-        })}
-      </div>
-    )}
-  />
-)
+    }
+  }
+  
+    `)
+    console.log(products)
+      return (
+        <div style={conatinerStyles}>
+          {products.allStripePrice.edges.map(({node: price}) => {
+            const newSku = {
+              id: price.id,
+              name: price.product.name,
+              description: price.product.description,
+              image: price.product.images,
+              currency: price.currency,
+              price: price.unit_amount
+            }
+            return (
+              <SkuCard newSku={newSku} key={price.id}/>
+            )
+          })}
+        </div>
+      )
+     
+  
+    }
+    export default Skus
