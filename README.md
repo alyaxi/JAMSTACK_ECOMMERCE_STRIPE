@@ -1,5 +1,5 @@
 <h2> PROJECT LINK: 
-JAMSTACK_STRIPE_SNIPCART : https://buildingsnipcart.netlify.app/
+JAMSTACK_STRIPE_SNIPCART : https://buildingsnipcart.netlify.app/ <br/>
 jAMSTACK_STRIPE_FINAL_PROJECT : https://gatsbyecommerce21.netlify.app/
  </h2>
 
